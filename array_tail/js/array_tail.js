@@ -1,30 +1,29 @@
-const arrayContainer = [];
+let arrayContainer = [];
 
 const btn = document.querySelector('button');
-// const inputEl = document.getElementById('data');
-const inputEl = 10;
+const inputEl = document.getElementById('data');
 const resultEl = document.querySelector('.alert');
 
-// btn.addEventListener('click',
-// function()
-// {
-//     // inputEl.value
-// });
-
-// let numeroInserito = parseInt(inputEl.value);
-let numeroInserito = parseInt(inputEl);
-
-
-for(let i = 0; i < numeroInserito; i++)
+btn.addEventListener('click',
+function()
 {
-    let randomNumber = getRndInteger(1, 100);
+    arrayContainer = [];
+
+    let numeroInserito = parseInt(inputEl.value);
+    // let numeroInserito = parseInt(inputEl);
     
-    arrayContainer.push(randomNumber);
-    console.log(randomNumber)
+    
+    for(let i = 0; i < numeroInserito; i++)
+    {
+        let randomNumber = getRndInteger(1, 100);
+        
+        arrayContainer.push(randomNumber);
+        console.log(randomNumber)
+    };
+    console.log(arrayContainer)
+    
+});
 
-};
-
-console.log(arrayContainer)
 
 
 
