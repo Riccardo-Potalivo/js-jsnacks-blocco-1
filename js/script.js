@@ -13,7 +13,9 @@ const frigorifero =
 
 console.log(frigorifero)
 
+frigorifero.push('pesca')
 
+console.log(frigorifero)
 
 const btn = document.querySelector('button');
 const inputEl = document.getElementById('data');
