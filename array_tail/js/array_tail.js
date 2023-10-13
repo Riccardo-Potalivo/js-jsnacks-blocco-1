@@ -1,52 +1,32 @@
-const frigorifero =
-[
-    'banana',
-    'mela',
-    'pera',
-    'ciliegia',
-    'arancia',
-    'mandarino',
-    'cocomero',
-    'limone',
-    'fragola'  
-];
+const arrayContainer = [];
 
-console.log(frigorifero);
+const btn = document.querySelector('button');
+// const inputEl = document.getElementById('data');
+const inputEl = 10;
+const resultEl = document.querySelector('.alert');
 
-frigorifero.push('pesca');
+// btn.addEventListener('click',
+// function()
+// {
+//     // inputEl.value
+// });
 
-console.log(frigorifero);
+// let numeroInserito = parseInt(inputEl.value);
+let numeroInserito = parseInt(inputEl);
 
-let searchEl = false;
 
-for(let i = 0; i < frigorifero.length; i++)
+for(let i = 0; i < numeroInserito; i++)
 {
-    if(frigorifero[i] === 'cocomero')
-    {
-        searchEl = true;
-    }
+    let randomNumber = getRndInteger(1, numeroInserito);
+    
+    arrayContainer.push(randomNumber);
+    console.log(randomNumber)
 
 };
 
-if(searchEl)
-{
-    console.log("Trovato! Devo solo preparare il cocktail.")
-}
-else
-{
-    console.log("Oh no, devo uscire a comprare il cocomero!")
-}
+console.log(arrayContainer)
 
 
-const btn = document.querySelector('button');
-const inputEl = document.getElementById('data');
-const resultEl = document.querySelector('.alert');
-
-btn.addEventListener('click',
-function()
-{
-    // inputEl.value
-});
 
 
 //utility
