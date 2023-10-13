@@ -9,13 +9,34 @@ const frigorifero =
     'cocomero',
     'limone',
     'fragola'  
-]
+];
 
-console.log(frigorifero)
+console.log(frigorifero);
 
-frigorifero.push('pesca')
+frigorifero.push('pesca');
 
-console.log(frigorifero)
+console.log(frigorifero);
+
+let searchEl = false;
+
+for(let i = 0; i < frigorifero.length; i++)
+{
+    if(frigorifero[i] === 'cocomero')
+    {
+        searchEl = true;
+    }
+
+};
+
+if(searchEl)
+{
+    console.log("Trovato! Devo solo preparare il cocktail.")
+}
+else
+{
+    console.log("Oh no, devo uscire a comprare il cocomero!")
+}
+
 
 const btn = document.querySelector('button');
 const inputEl = document.getElementById('data');
