@@ -17,7 +17,7 @@ let numeroInserito = parseInt(inputEl);
 
 for(let i = 0; i < numeroInserito; i++)
 {
-    let randomNumber = getRndInteger(1, numeroInserito);
+    let randomNumber = getRndInteger(1, 100);
     
     arrayContainer.push(randomNumber);
     console.log(randomNumber)
